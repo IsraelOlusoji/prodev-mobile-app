@@ -52,10 +52,12 @@ export default function Index() {
             </Link>
           </View>
 
-          <View style={styles.buttonGroupSubText}>
-            <Image source={HEROLOGOGREEN} resizeMode="contain" />
-            <Text style={styles.titleSubText}>Continue to home</Text>
-          </View>
+          <Link href="/(home)" asChild>
+            <TouchableOpacity style={styles.buttonGroupSubText}>
+              <Image source={HEROLOGOGREEN} resizeMode="contain" />
+              <Text style={styles.titleSubText}>Continue to home</Text>
+            </TouchableOpacity>
+          </Link>
         </ImageBackground>
       </SafeAreaView>
     </SafeAreaProvider>
