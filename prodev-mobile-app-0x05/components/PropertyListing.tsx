@@ -8,6 +8,7 @@ const PropertyListing = ({ listings }: PropertListing) => {
     <View
       style={{
         flex: 1,
+        
         rowGap: 10,
       }}
     >
